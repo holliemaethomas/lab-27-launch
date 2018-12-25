@@ -5,6 +5,7 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "babel": "^6.23.0",
     "enzyme": "latest",
     "enzyme-adapter-react-16": "1.7.0",
     "react": "16.6.3",
@@ -21,10 +22,13 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom --verbose --watch",
     "eject": "react-scripts eject"
   },
-  "jest": {
-    "setupTestFrameworkScriptFile": "<rootDir>__tests__/jest-setup.js"
-  }
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
